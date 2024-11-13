@@ -7,6 +7,7 @@ import "@mantine/dates/styles.css";
 import "@mantine/dropzone/styles.css";
 import "@mantine/carousel/styles.css";
 import "@mantine/spotlight/styles.css";
+import "./global.css";
 import App from "./App";
 
 // Render the app
