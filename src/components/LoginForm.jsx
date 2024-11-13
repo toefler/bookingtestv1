@@ -3,7 +3,11 @@ import styles from "./login-form.module.css"
 import { TextInput } from '@mantine/core';
 import { Button } from '@mantine/core';
 import { Container } from '@mantine/core';
+import { createClient } from '@supabase/supabase-js'
 
+const supabaseUrl = 'https://tuqfprlolqdwozasturb.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 export function LoginForm() {
 const containerProps = {
