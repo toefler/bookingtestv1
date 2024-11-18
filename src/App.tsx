@@ -35,7 +35,7 @@ export default function App() {
       <ModalsProvider>
         <RouterProvider
           router={router}
-          // context={context}
+          context={context}
           basepath="/bookingtestv1"
         />
       </ModalsProvider>

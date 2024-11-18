@@ -41,9 +41,9 @@ function Signin() {
     p: 'md',
     mt: 'md',}
 //1. gemme info på brugeren 
-// const userInfo ={
-//   email,
-// }
+const userInfo ={
+  email,
+}
 
 // context.setUserInfo(userInfo)
 // Siden ændrer sig, redirecter til /index :) 
