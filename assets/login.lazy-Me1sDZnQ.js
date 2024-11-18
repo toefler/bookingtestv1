@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Signup-CzycDScD.js","assets/index-DEaJZVwV.js","assets/index-DPuJY_7i.css","assets/login-form.module-BsBVkjPj.js","assets/login-form-CvFVW5fN.css"])))=>i.map(i=>d[i]);
+import{r as t,_ as e,c as r,j as o}from"./index-DEaJZVwV.js";const n=t.lazy(()=>e(()=>import("./Signup-CzycDScD.js"),__vite__mapDeps([0,1,2,3,4]))),a=r("/login")({component:i});function i(){return o.jsx("div",{children:o.jsx(n,{})})}export{a as Route};
