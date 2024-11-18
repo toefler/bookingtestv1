@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { createClient } from '@supabase/supabase-js'
+import styles from "./login-form.module.css"
+import { TextInput } from '@mantine/core';
+import { Button } from '@mantine/core';
+import { Container } from '@mantine/core';
+import { PasswordInput } from "@mantine/core";
+
 
 const supabaseUrl = 'https://tuqfprlolqdwozasturb.supabase.co'
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR1cWZwcmxvbHFkd296YXN0dXJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE1MDI3MzAsImV4cCI6MjA0NzA3ODczMH0.inEWpMbOf50doEUSLz2mBus1FJirlGvDtrBCJdY3rOU";
@@ -33,14 +39,27 @@ function Signup() {
     signUpNewUser()
   };
 
+  const containerProps = {
+    mx: 'auto',
+    p: 'md',
+    mt: 'md',}
+
   return (
-    <div>
+    <Container size="xs" className={styles.container}{...containerProps}>
+      <h1>Signup</h1>
       <form onSubmit={handleSignup}>
-        <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
-        <button type="submit">Create User</button>
+      <TextInput
+      type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} 
+      />
+      <PasswordInput
+  type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}
+      />       
+      
+        <div className={styles.loginbutton}>
+        <Button type="submit" >Create User</Button>
+      </div>
       </form>
-    </div>
+      </Container>
   );
 }
 
